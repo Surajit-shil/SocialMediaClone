@@ -1,0 +1,48 @@
+.comments .write {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.comments .write img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 10px;
+}
+.comments .write input {
+  width: 70%;
+  height: 25px;
+}
+.comments .write button {
+  padding: 2px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.comments .comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.comments .comment .info {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+.comments .comment img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 10px;
+}
+.comments .comment .date {
+  margin-right: 10px;
+  align-self: center;
+  color: gray;
+}/*# sourceMappingURL=comment.css.map */

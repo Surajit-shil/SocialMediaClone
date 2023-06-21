@@ -1,0 +1,63 @@
+@import '../../../App.scss';
+.leftbar{
+    @include themify($themes){
+    flex:2;
+    .container{
+        background-color: themed('bg');
+        color: themed('textColorSoft');
+        display: flex;
+        flex-direction: column;
+        gap:0;
+        position: sticky;
+        top: 50px;
+        height: calc(100vh - 50px);
+        overflow: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+            width: 10px;
+        }
+        .menu{
+            .user{
+                display: flex;
+                align-items: center;
+                // justify-content: center;
+                margin: 10px 0;
+            }
+            .dp{
+                padding-left:2px;
+                display:flex;
+                width: 51%;
+                height: 30px;
+                img{
+                    object-fit: contain;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 1px solid themed('textColor');
+                    background-color: white;
+                }
+                span{
+                    padding-left: 5px;
+                    font-size: 15px;
+                }
+            }
+        }
+            .items{
+                display: flex;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                img{
+                   width: 70%;
+                   height: 70%;
+                   margin: 10px 5px;
+                }
+            }
+            hr{
+                width: 9vw;
+                // border: none;
+            }
+    }
+    
+}
+}

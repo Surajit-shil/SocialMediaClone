@@ -1,0 +1,142 @@
+.theme-light .post {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  color: #000;
+  height: auto;
+  box-shadow: 0px 0px 17px -1px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+.theme-light .post .user {
+  height: 30px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.theme-light .post .user .left img {
+  margin-left: 15px;
+  margin-top: 10px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+.theme-light .post .user .left span {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+.theme-light .post .user .left p {
+  position: absolute;
+  top: 35px;
+  left: 70px;
+}
+.theme-light .post .user .right {
+  padding-right: 10px;
+}
+.theme-light .post .content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.theme-light .post .content span {
+  height: auto;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.theme-light .post .content img {
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 15px;
+  margin-top: 10px;
+  width: 96%;
+}
+.theme-light .post .info {
+  display: flex;
+  height: 20%;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.theme-light .post .info .item {
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.theme-dark .post {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #222;
+  color: whitesmoke;
+  height: auto;
+  box-shadow: 0px 0px 17px -1px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+.theme-dark .post .user {
+  height: 30px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.theme-dark .post .user .left img {
+  margin-left: 15px;
+  margin-top: 10px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+.theme-dark .post .user .left span {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+.theme-dark .post .user .left p {
+  position: absolute;
+  top: 35px;
+  left: 70px;
+}
+.theme-dark .post .user .right {
+  padding-right: 10px;
+}
+.theme-dark .post .content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.theme-dark .post .content span {
+  height: auto;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.theme-dark .post .content img {
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 15px;
+  margin-top: 10px;
+  width: 96%;
+}
+.theme-dark .post .info {
+  display: flex;
+  height: 20%;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.theme-dark .post .info .item {
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}/*# sourceMappingURL=posts.css.map */

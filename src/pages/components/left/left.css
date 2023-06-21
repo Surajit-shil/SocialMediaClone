@@ -1,0 +1,112 @@
+.theme-light .leftbar {
+  flex: 2;
+}
+.theme-light .leftbar .container {
+  background-color: white;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 50px);
+  overflow: scroll;
+}
+.theme-light .leftbar .container::-webkit-scrollbar {
+  display: none;
+  width: 10px;
+}
+.theme-light .leftbar .container .menu .user {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.theme-light .leftbar .container .menu .dp {
+  padding-left: 2px;
+  display: flex;
+  width: 51%;
+  height: 30px;
+}
+.theme-light .leftbar .container .menu .dp img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: white;
+}
+.theme-light .leftbar .container .menu .dp span {
+  padding-left: 5px;
+  font-size: 15px;
+}
+.theme-light .leftbar .container .items {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+.theme-light .leftbar .container .items img {
+  width: 70%;
+  height: 70%;
+  margin: 10px 5px;
+}
+.theme-light .leftbar .container hr {
+  width: 9vw;
+}
+.theme-dark .leftbar {
+  flex: 2;
+}
+.theme-dark .leftbar .container {
+  background-color: #222;
+  color: lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 50px);
+  overflow: scroll;
+}
+.theme-dark .leftbar .container::-webkit-scrollbar {
+  display: none;
+  width: 10px;
+}
+.theme-dark .leftbar .container .menu .user {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.theme-dark .leftbar .container .menu .dp {
+  padding-left: 2px;
+  display: flex;
+  width: 51%;
+  height: 30px;
+}
+.theme-dark .leftbar .container .menu .dp img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid whitesmoke;
+  background-color: white;
+}
+.theme-dark .leftbar .container .menu .dp span {
+  padding-left: 5px;
+  font-size: 15px;
+}
+.theme-dark .leftbar .container .items {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+.theme-dark .leftbar .container .items img {
+  width: 70%;
+  height: 70%;
+  margin: 10px 5px;
+}
+.theme-dark .leftbar .container hr {
+  width: 9vw;
+}/*# sourceMappingURL=left.css.map */

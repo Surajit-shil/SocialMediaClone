@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main_page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #21618C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_page .card {
+  height: 70vh;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #7FB3D5;
+  padding: 0 10px;
+  gap: 50px;
+}
+.main_page .card .left {
+  border-radius: 20px;
+  background-image: src("../assets/pexels-ali-madad-sakhirani-1268513.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.main_page .card .left a {
+  color: white;
+}
+.main_page .card .left p {
+  font-family: "Ubuntu", sans-serif;
+}
+.main_page .card .right {
+  background-color: white;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  justify-content: space-evenly;
+}
+.main_page .card .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main_page .card .right input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+}/*# sourceMappingURL=register.css.map */

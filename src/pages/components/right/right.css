@@ -1,0 +1,300 @@
+.theme-light .rightbar {
+  flex: 3;
+}
+.theme-light .rightbar .container {
+  background-color: #f6f3f3;
+  color: #555;
+  gap: 0;
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 50px);
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.theme-light .rightbar .container::-webkit-scrollbar {
+  display: none;
+}
+.theme-light .rightbar .container .suggestions {
+  width: 80%;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: -7px 8px 15px -7px rgba(0, 0, 0, 0.58);
+  border: 1px solid lightgrey;
+}
+.theme-light .rightbar .container .suggestions span {
+  font-weight: 100px;
+  color: grey;
+  margin-bottom: 20px;
+}
+.theme-light .rightbar .container .suggestions .user {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+.theme-light .rightbar .container .suggestions .user .userinfo {
+  display: flex;
+  gap: 5px;
+}
+.theme-light .rightbar .container .suggestions .user .userinfo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.theme-light .rightbar .container .suggestions .user .userinfo span {
+  font-weight: 100px;
+  color: grey;
+}
+.theme-light .rightbar .container .suggestions .user .buttons {
+  display: flex;
+  gap: 10px;
+}
+.theme-light .rightbar .container .suggestions .user .buttons button {
+  height: 20px;
+  border: none;
+  border-radius: 0px;
+  padding: 5px 5px;
+  font-weight: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.theme-light .rightbar .container .suggestions .user .buttons .success {
+  background-color: blue;
+}
+.theme-light .rightbar .container .suggestions .user .buttons .danger {
+  background-color: red;
+}
+.theme-light .rightbar .container .latest_activities {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid lightgrey;
+  margin: 10px 0px;
+  box-shadow: -7px 8px 15px -7px rgba(0, 0, 0, 0.58);
+  background-color: white;
+}
+.theme-light .rightbar .container .latest_activities span {
+  color: grey;
+}
+.theme-light .rightbar .container .latest_activities .user_activity {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 5px;
+}
+.theme-light .rightbar .container .latest_activities .user_activity .userinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-light .rightbar .container .latest_activities .user_activity .userinfo p {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.theme-light .rightbar .container .latest_activities .user_activity .userinfo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.theme-light .rightbar .container .latest_activities .user_activity .userinfo span {
+  font-weight: 100px;
+  color: grey;
+}
+.theme-light .rightbar .container .online_friends {
+  box-shadow: -7px 8px 15px -7px rgba(0, 0, 0, 0.58);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  margin: 10px 0px;
+  background-color: white;
+  width: 80%;
+  gap: 20px;
+}
+.theme-light .rightbar .container .online_friends span {
+  color: grey;
+}
+.theme-light .rightbar .container .online_friends .online_users {
+  margin: 3px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.theme-light .rightbar .container .online_friends .online_users .userinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.theme-light .rightbar .container .online_friends .online_users .userinfo .indicate {
+  top: 0;
+  left: 25px;
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: limegreen;
+}
+.theme-light .rightbar .container .online_friends .online_users .userinfo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.theme-light .rightbar .container .online_friends .online_users .userinfo span {
+  font-weight: 100px;
+  color: grey;
+}
+.theme-dark .rightbar {
+  flex: 3;
+}
+.theme-dark .rightbar .container {
+  background-color: #333;
+  color: lightgray;
+  gap: 0;
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 50px);
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.theme-dark .rightbar .container::-webkit-scrollbar {
+  display: none;
+}
+.theme-dark .rightbar .container .suggestions {
+  width: 80%;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  box-shadow: -7px 8px 15px -7px rgba(0, 0, 0, 0.58);
+  border: 1px solid lightgrey;
+}
+.theme-dark .rightbar .container .suggestions span {
+  font-weight: 100px;
+  color: grey;
+  margin-bottom: 20px;
+}
+.theme-dark .rightbar .container .suggestions .user {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+.theme-dark .rightbar .container .suggestions .user .userinfo {
+  display: flex;
+  gap: 5px;
+}
+.theme-dark .rightbar .container .suggestions .user .userinfo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.theme-dark .rightbar .container .suggestions .user .userinfo span {
+  font-weight: 100px;
+  color: grey;
+}
+.theme-dark .rightbar .container .suggestions .user .buttons {
+  display: flex;
+  gap: 10px;
+}
+.theme-dark .rightbar .container .suggestions .user .buttons button {
+  height: 20px;
+  border: none;
+  border-radius: 0px;
+  padding: 5px 5px;
+  font-weight: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.theme-dark .rightbar .container .suggestions .user .buttons .success {
+  background-color: blue;
+}
+.theme-dark .rightbar .container .suggestions .user .buttons .danger {
+  background-color: red;
+}
+.theme-dark .rightbar .container .latest_activities {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid lightgrey;
+  margin: 10px 0px;
+  box-shadow: -7px 8px 15px -7px rgba(0, 0, 0, 0.58);
+  background-color: #222;
+}
+.theme-dark .rightbar .container .latest_activities span {
+  color: grey;
+}
+.theme-dark .rightbar .container .latest_activities .user_activity {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 5px;
+}
+.theme-dark .rightbar .container .latest_activities .user_activity .userinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-dark .rightbar .container .latest_activities .user_activity .userinfo p {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.theme-dark .rightbar .container .latest_activities .user_activity .userinfo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.theme-dark .rightbar .container .latest_activities .user_activity .userinfo span {
+  font-weight: 100px;
+  color: grey;
+}
+.theme-dark .rightbar .container .online_friends {
+  box-shadow: -7px 8px 15px -7px rgba(0, 0, 0, 0.58);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  margin: 10px 0px;
+  background-color: #222;
+  width: 80%;
+  gap: 20px;
+}
+.theme-dark .rightbar .container .online_friends span {
+  color: grey;
+}
+.theme-dark .rightbar .container .online_friends .online_users {
+  margin: 3px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.theme-dark .rightbar .container .online_friends .online_users .userinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.theme-dark .rightbar .container .online_friends .online_users .userinfo .indicate {
+  top: 0;
+  left: 25px;
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: limegreen;
+}
+.theme-dark .rightbar .container .online_friends .online_users .userinfo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.theme-dark .rightbar .container .online_friends .online_users .userinfo span {
+  font-weight: 100px;
+  color: grey;
+}/*# sourceMappingURL=right.css.map */
