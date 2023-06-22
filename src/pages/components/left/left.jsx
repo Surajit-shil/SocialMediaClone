@@ -15,7 +15,7 @@ import Courses from '../assets/12.png'
 import Fundraiser from '../assets/13.png'
 import { useContext } from 'react';
 import { AuthContext } from '../../../Context/Auth';
-
+import { Link } from 'react-router-dom';
 function Left(){
     const {currUser}=useContext(AuthContext)
     return(
@@ -24,8 +24,10 @@ function Left(){
           <div className="container">
             <div className="menu">
                 <div className="user">
-                <div className='dp'>
+                <div className='dp' style={{cursor:'pointer'}}>
+                    <Link to='/profile'>
                     <img src={currUser.profilePic} alt='no image'></img>
+                    </Link>
                     <span>{currUser.username}</span>
                 </div>
                 </div>

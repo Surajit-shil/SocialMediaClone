@@ -13,6 +13,7 @@ import { useContext, useEffect, useState } from 'react'
 import { DarkModeContext} from './Context/Darkmode'
 import { AuthContext } from './Context/Auth'
 import Protected from './pages/components/Protected/protected'
+import Logout from './pages/logout/logout'
 
 function App() {
   const {darkMode}=useContext(DarkModeContext)
@@ -46,6 +47,7 @@ function App() {
   return (
     <>
     <Routes>
+    <Route exact path='/' Component={Login}></Route>
     <Route path='/' element={
     <Protected>
        <Layout style={{display:'flex'}}></Layout>
@@ -57,6 +59,7 @@ function App() {
     </Route>
     <Route path='/login' Component={Login}></Route>
     <Route path='/register' Component={Register}></Route>
+    <Route path='/exit' Component={Logout}></Route>
    </Routes>
     </>
   );

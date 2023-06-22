@@ -1,6 +1,11 @@
 import './register.scss'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 function Register() {
+    const navigate=useNavigate();
+    const clickHandle=()=>{
+          localStorage.setItem('accept',true)
+        navigate("/home")       
+    }
     return (
         <>
             <div className="main_page">
@@ -13,13 +18,13 @@ function Register() {
                     <div className="right">
                         <h2>Register</h2>
                         <form>
-                            <input type='text' placeholder="Name"></input>
-                            <input type='email' placeholder="e-mail"></input>
+                            <input type='text' placeholder="Name" required></input>
+                            <input type='email' placeholder="e-mail" required></input>
                             <input type='number' placeholder='mobile number'></input>
                             <input type='text' placeholder='username'></input>
                             <input type='password' placeholder='password'></input>
                             <span><input type='checkbox'></input> Remember me</span>
-                            <Link to='/home'><button>Done</button></Link>
+                            <button onClick={clickHandle}>Done</button>
                         </form>
                     </div>
                 </div>
