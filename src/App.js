@@ -19,9 +19,7 @@ function App() {
   const {darkMode}=useContext(DarkModeContext)
   const {currUser}=useContext(AuthContext)
   const {acceptStatus}=useContext(AuthContext)
-  console.log('App component is running and value of accepStatus is:',acceptStatus)
   const Layout=()=>{
-    console.log('The layout component is running')
     return(
       <>
       <div className = {`theme-${darkMode ? 'dark' : 'light'}`}>

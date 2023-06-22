@@ -1,9 +1,12 @@
+import { useContext } from 'react';
 import './register.scss'
 import { Link, useNavigate } from 'react-router-dom'
+import { AuthContext } from '../../Context/Auth';
 function Register() {
     const navigate=useNavigate();
-    const clickHandle=()=>{
-          localStorage.setItem('accept',true)
+    const {login}=useContext(AuthContext)
+    const clickHandle=(e)=>{
+        login()
         navigate("/home")       
     }
     return (

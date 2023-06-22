@@ -4,6 +4,7 @@ export const AuthContext=createContext();
 export const AuthContextProvider=({children})=>{
     const [currUser,setCurrentUser]=useState(JSON.parse(localStorage.getItem('user')) || null);
     const [acceptStatus,setAcceptStatus]=useState(JSON.parse(localStorage.getItem('accept')) ||false);
+    // console.log('acceptStatus inside the Auth.js',acceptStatus)
     const login=()=>{
     setAcceptStatus(true);
     setCurrentUser(
