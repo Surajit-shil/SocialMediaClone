@@ -1,12 +1,14 @@
-import { createContext, useContext } from 'react'
+import { createContext, useContext,useEffect,useState } from 'react'
 import './login.scss'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import { AuthContext } from '../../Context/Auth'
 // import App from '..../App'
 function Login() {
     const {login}=useContext(AuthContext)
+    const {acceptStatus}=useContext(AuthContext)
+    const [accept,setAccept]=useState(acceptStatus)
     const handleLogin=()=>{
-      login();
+       login()
     }
     return (
         <>
@@ -23,8 +25,8 @@ function Login() {
                             <input type='text' placeholder="username"></input>
                             <input type='password' placeholder="password"></input>
                             {/* <Link to='/'><button onClick={handleLogin}>Login</button></Link> */}
-                            <button onClick={handleLogin}>Login</button>
                         </form>
+                        <Link to='/home'><button onClick={handleLogin}>Login</button></Link>
                     </div>
                 </div>
             </div>

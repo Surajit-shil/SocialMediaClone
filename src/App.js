@@ -8,16 +8,19 @@ import Right from './pages/components/right/right'
 import Left from './pages/components/left/left'
 import Navbar from './pages/components/navbar/navbar'
 import Profile from './pages/components/profile/profile'
-import{Navigate, Outlet, Route,Routes} from 'react-router-dom'
-import { useContext } from 'react'
+import{Navigate, Outlet, Route,Routes,withRouter,Link} from 'react-router-dom'
+import { useContext, useEffect, useState } from 'react'
 import { DarkModeContext} from './Context/Darkmode'
 import { AuthContext } from './Context/Auth'
+import Protected from './pages/components/Protected/protected'
 
 function App() {
   const {darkMode}=useContext(DarkModeContext)
   const {currUser}=useContext(AuthContext)
-  let accepted=true
+  const {acceptStatus}=useContext(AuthContext)
+  console.log('App component is running and value of accepStatus is:',acceptStatus)
   const Layout=()=>{
+    console.log('The layout component is running')
     return(
       <>
       <div className = {`theme-${darkMode ? 'dark' : 'light'}`}>
@@ -31,17 +34,23 @@ function App() {
       </>
     )
   }
-  const Protected=({children})=>{
-        if(!accepted)
-         return <Navigate to='/login'></Navigate>
-        else
-         return children
-  }
-  
+
+  // const Protected=({children})=>{
+  //   // const {acceptStatus}=useContext(AuthContext)
+  //   console.log('protected component is running and acceptStatus is:',acceptStatus)
+  //       // if(!acceptStatus)
+  //       //  return <Navigate to='/login'></Navigate>
+  //       // else
+  //        return children
+  // }
   return (
     <>
     <Routes>
-    <Route path='/' element={<Protected><Layout style={{display:'flex'}}></Layout></Protected>}>
+    <Route path='/' element={
+    <Protected>
+       <Layout style={{display:'flex'}}></Layout>
+    </Protected>
+    }>
       <Route exact path='/' Component={Home}></Route>
       <Route path='/profile' Component={Profile}></Route>
       <Route path='/home' Component={Home}></Route>
